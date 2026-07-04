@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>الكوافير حسين صباح — لوحة التحكم</title>
+<title>الكوافير سيف العلي — لوحة التحكم</title>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Cinzel:wght@700;900&display=swap" rel="stylesheet"/>
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
@@ -242,9 +242,9 @@ body{font-family:'Cairo',sans-serif;direction:rtl;background:var(--black);color:
 <!-- PIN -->
 <div id="pinScreen" class="pin-screen">
   <div class="pin-logo">
-    <div style="width:110px;height:110px;border:1px solid #c9a84c44;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 0 60%;background:radial-gradient(circle,#1a1208,#0a0a0a);"><svg width="80" height="80" viewBox="0 0 160 160" fill="none"><circle cx="80" cy="80" r="72" stroke="#c9a84c" stroke-width="1.2" fill="none"/><line x1="48" y1="50" x2="112" y2="106" stroke="#c9a84c" stroke-width="4" stroke-linecap="round"/><line x1="112" y1="50" x2="48" y2="106" stroke="#e8c96a" stroke-width="4" stroke-linecap="round"/><circle cx="48" cy="106" r="12" stroke="#c9a84c" stroke-width="2.5" fill="none"/><circle cx="112" cy="106" r="12" stroke="#e8c96a" stroke-width="2.5" fill="none"/><circle cx="80" cy="77" r="7" fill="#0d0d0d" stroke="#c9a84c" stroke-width="2.5"/><circle cx="80" cy="77" r="2.8" fill="#c9a84c"/></svg></div>
+    <div style="width:110px;height:110px;border:1px solid #c9a84c44;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 0 60%;background:radial-gradient(circle,#1a1208,#0a0a0a);"><svg width="80" height="80" viewBox="0 0 160 160" fill="none"><defs><linearGradient id="pinLogoG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#F5E199"/><stop offset="100%" stop-color="#C9A84C"/></linearGradient></defs><circle cx="80" cy="80" r="72" stroke="url(#pinLogoG)" stroke-width="1.2" fill="none"/><circle cx="80" cy="80" r="63" stroke="url(#pinLogoG)" stroke-width="0.5" opacity="0.35" fill="none"/><text x="80" y="102" text-anchor="middle" font-family="Cairo" font-size="52" font-weight="900" fill="url(#pinLogoG)">س.ع</text></svg></div>
   </div>
-  <div class="pin-title">الكوافير حسين صباح</div>
+  <div class="pin-title">الكوافير سيف العلي</div>
   <div class="pin-sub">أدخل رمز الدخول</div>
   <div class="pin-dots">
     <div class="pin-dot" id="d0"></div><div class="pin-dot" id="d1"></div>
@@ -262,16 +262,16 @@ body{font-family:'Cairo',sans-serif;direction:rtl;background:var(--black);color:
 
 <!-- LOADER -->
 <div class="loader-app" id="loaderApp" style="display:none">
-  <div class="loader-ring"></div><p>الكوافير حسين صباح</p>
+  <div class="loader-ring"></div><p>الكوافير سيف العلي</p>
 </div>
 
 <!-- APP -->
 <div class="app" id="mainApp" style="display:none">
   <div class="hdr">
     <div class="hdr-left">
-      <svg width="28" height="28" viewBox="0 0 160 160" fill="none"><circle cx="80" cy="80" r="72" stroke="#c9a84c" stroke-width="1.2" fill="none"/><line x1="48" y1="50" x2="112" y2="106" stroke="#c9a84c" stroke-width="4" stroke-linecap="round"/><line x1="112" y1="50" x2="48" y2="106" stroke="#e8c96a" stroke-width="4" stroke-linecap="round"/><circle cx="48" cy="106" r="12" stroke="#c9a84c" stroke-width="2.5" fill="none"/><circle cx="112" cy="106" r="12" stroke="#e8c96a" stroke-width="2.5" fill="none"/><circle cx="80" cy="77" r="7" fill="#0d0d0d" stroke="#c9a84c" stroke-width="2.5"/><circle cx="80" cy="77" r="2.8" fill="#c9a84c"/></svg>
+      <svg width="28" height="28" viewBox="0 0 160 160" fill="none"><defs><linearGradient id="hdrLogoG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#F5E199"/><stop offset="100%" stop-color="#C9A84C"/></linearGradient></defs><circle cx="80" cy="80" r="72" stroke="url(#hdrLogoG)" stroke-width="2" fill="none"/><text x="80" y="104" text-anchor="middle" font-family="Cairo" font-size="70" font-weight="900" fill="url(#hdrLogoG)">س</text></svg>
       <div>
-        <div class="hdr-brand">الكوافير حسين صباح</div>
+        <div class="hdr-brand">الكوافير سيف العلي</div>
         <div class="hdr-sub">لوحة التحكم</div>
       </div>
     </div>
@@ -538,8 +538,8 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/fireba
 import { getFirestore, doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 const _app=initializeApp({apiKey:"AIzaSyBodSJzDp-6TUzKDYz93_u9b9klNYPSu_M",authDomain:"hussein-sabah-salon.firebaseapp.com",projectId:"hussein-sabah-salon",storageBucket:"hussein-sabah-salon.firebasestorage.app",messagingSenderId:"517962558315",appId:"1:517962558315:web:20920a4bc090ce2bf87a2e"});
 const _db=getFirestore(_app);
-const DB=doc(_db,"hussein-sabah","data");
-const storeRef=doc(_db,"hussein-sabah","store");
+const DB=doc(_db,"saif-alali","data");
+const storeRef=doc(_db,"saif-alali","store");
 
 const ALL_SLOTS=["12:00 م","12:30 م","1:00 م","1:30 م","2:00 م","2:30 م","3:00 م","3:30 م","4:00 م","4:30 م","5:00 م","5:30 م","6:00 م","6:30 م","7:00 م","7:30 م","8:00 م","8:30 م","9:00 م","9:30 م","10:00 م","10:30 م","11:00 م","11:30 م","12:00 ص","12:30 ص","1:00 ص","1:30 ص","2:00 ص","2:30 ص","3:00 ص","3:30 ص","4:00 ص","4:30 ص","5:00 ص","5:30 ص","6:00 ص","6:30 ص","7:00 ص","7:30 ص","8:00 ص","8:30 ص","9:00 ص","9:30 ص","10:00 ص","10:30 ص","11:00 ص","11:30 ص"];
 const SH={"12:00 م":12,"12:30 م":12.5,"1:00 م":13,"1:30 م":13.5,"2:00 م":14,"2:30 م":14.5,"3:00 م":15,"3:30 م":15.5,"4:00 م":16,"4:30 م":16.5,"5:00 م":17,"5:30 م":17.5,"6:00 م":18,"6:30 م":18.5,"7:00 م":19,"7:30 م":19.5,"8:00 م":20,"8:30 م":20.5,"9:00 م":21,"9:30 م":21.5,"10:00 م":22,"10:30 م":22.5,"11:00 م":23,"11:30 م":23.5,"12:00 ص":0,"12:30 ص":0.5,"1:00 ص":1,"1:30 ص":1.5,"2:00 ص":2,"2:30 ص":2.5,"3:00 ص":3,"3:30 ص":3.5,"4:00 ص":4,"4:30 ص":4.5,"5:00 ص":5,"5:30 ص":5.5,"6:00 ص":6,"6:30 ص":6.5,"7:00 ص":7,"7:30 ص":7.5,"8:00 ص":8,"8:30 ص":8.5,"9:00 ص":9,"9:30 ص":9.5,"10:00 ص":10,"10:30 ص":10.5,"11:00 ص":11,"11:30 ص":11.5};
@@ -716,14 +716,14 @@ function renderBookings(){
 async function remind(id){
   const b=data.bookings.find(x=>x.id===id);if(!b)return;
   b.reminded=true;
-  try{await save();const msg=`السلام عليكم ${b.name} 👋\n\n🔔 تذكير بموعدك في *الكوافير حسين صباح*\n\n✂️ ${b.service}\n📅 ${b.dateLabel||b.day}\n⏰ ${b.slot}\n💰 ${fp(b.price)}\n\n⚠️ التأخر أكثر من 15 دقيقة يلغي حجزك.\n\nالكوافير حسين صباح ☀️`;openWA(b.phone,msg);render();toast(`✅ تذكير لـ ${b.name}`);}
+  try{await save();const msg=`السلام عليكم ${b.name} 👋\n\n🔔 تذكير بموعدك في *الكوافير سيف العلي*\n\n✂️ ${b.service}\n📅 ${b.dateLabel||b.day}\n⏰ ${b.slot}\n💰 ${fp(b.price)}\n\n⚠️ التأخر أكثر من 15 دقيقة يلغي حجزك.\n\nالكوافير سيف العلي ☀️`;openWA(b.phone,msg);render();toast(`✅ تذكير لـ ${b.name}`);}
   catch(e){b.reminded=false;toast('❌ فشل');}
 }
 async function cancelB(id){if(!confirm('إلغاء هذا الحجز؟'))return;const b=data.bookings.find(x=>x.id===id);if(!b)return;const bk=[...data.bookings];data.bookings=data.bookings.filter(x=>x.id!==id);try{await save();render();toast(`🗑️ ألغي موعد ${b.name}`);}catch{data.bookings=bk;toast('❌ فشل');}}
 async function cancelLate(id){const b=data.bookings.find(x=>x.id===id);if(!b)return;const m=lateMin(b);const bk=[...data.bookings];data.bookings=data.bookings.filter(x=>x.id!==id);try{await save();render();toast(`⛔ ألغي حجز ${b.name} — تأخر ${m} دقيقة`);}catch{data.bookings=bk;toast('❌ فشل');}}
 async function markDone(id){const b=data.bookings.find(x=>x.id===id);if(!b)return;if(!confirm(`تأكيد انتهاء خدمة ${b.name}؟`))return;data.bookings=data.bookings.filter(x=>x.id!==id);if(!data.archivedBookings)data.archivedBookings=[];data.archivedBookings.push({...b,completedAt:Date.now(),status:'done'});try{await save();render();toast(`✅ تمت خدمة ${b.name}`);}catch{data.bookings.push(b);data.archivedBookings.pop();toast('❌ فشل');}}
 async function saveNote(id){const b=data.bookings.find(x=>x.id===id);if(!b)return;const inp=document.getElementById('note_'+id);if(!inp)return;b.note=inp.value.trim();await save();toast('💾 تم حفظ الملاحظة');}
-function sendWait(id){const b=data.bookings.find(x=>x.id===id);if(!b)return;const w=waitInfo(id);if(!w){toast('هذا الحجز مو اليوم');return;}const msg=w.before===0?`السلام عليكم ${b.name} 👋\n\n✂️ دورك الحين عند الكوافير حسين صباح!\n\nتفضل مباشرة ☀️`:`السلام عليكم ${b.name} 👋\n\n⏳ وقت انتظارك التقديري:\n👤 في قبلك: ${w.before} زبون\n⏱️ ~${w.mins} دقيقة\n\nالكوافير حسين صباح ☀️`;openWA(b.phone,msg);toast(`📲 أُرسل لـ ${b.name}`);}
+function sendWait(id){const b=data.bookings.find(x=>x.id===id);if(!b)return;const w=waitInfo(id);if(!w){toast('هذا الحجز مو اليوم');return;}const msg=w.before===0?`السلام عليكم ${b.name} 👋\n\n✂️ دورك الحين عند الكوافير سيف العلي!\n\nتفضل مباشرة ☀️`:`السلام عليكم ${b.name} 👋\n\n⏳ وقت انتظارك التقديري:\n👤 في قبلك: ${w.before} زبون\n⏱️ ~${w.mins} دقيقة\n\nالكوافير سيف العلي ☀️`;openWA(b.phone,msg);toast(`📲 أُرسل لـ ${b.name}`);}
 async function clearAll(){
   if(!confirm('تحذير: سيتم مسح كل الحجوزات النشطة!\nسيتم تحميل نسخة احتياطية تلقائياً قبل المسح.'))return;
   const code=prompt('اكتب "مسح" للتأكيد:');
@@ -803,7 +803,7 @@ function renderWaitlist(){
   const list=document.getElementById('waitCards');if(!data.waitlist||!data.waitlist.length){list.innerHTML=`<div class="empty"><div class="empty-icon">⏳</div><p>القائمة فارغة</p></div>`;return;}
   list.innerHTML=data.waitlist.map(w=>`<div class="wait-card"><div><div class="wait-name">${w.name}</div><div class="wait-detail">📞 ${w.phone} • 📅 ${w.day}</div></div><button class="notif-btn" onclick="notifyWait('${w.id}')">📲 أبلغه</button></div>`).join('');
 }
-async function notifyWait(id){const w=data.waitlist.find(x=>x.id===id);if(!w)return;const msg=`السلام عليكم ${w.name} 👋\n\n🎉 تفرغ وقت عند الكوافير حسين صباح ليوم ${w.day}!\n\nاحجز الحين ☀️`;openWA(w.phone,msg);data.waitlist=data.waitlist.filter(x=>x.id!==id);try{await save();renderWaitlist();toast(`✅ تم إبلاغ ${w.name}`);}catch{data.waitlist.push(w);}}
+async function notifyWait(id){const w=data.waitlist.find(x=>x.id===id);if(!w)return;const msg=`السلام عليكم ${w.name} 👋\n\n🎉 تفرغ وقت عند الكوافير سيف العلي ليوم ${w.day}!\n\nاحجز الحين ☀️`;openWA(w.phone,msg);data.waitlist=data.waitlist.filter(x=>x.id!==id);try{await save();renderWaitlist();toast(`✅ تم إبلاغ ${w.name}`);}catch{data.waitlist.push(w);}}
 
 function renderSettings(){
   // Render services editor
@@ -1151,7 +1151,7 @@ async function saveManual(){
   if(blocked){toast('⚠️ هذا الوقت محجوب — اختار وقت ثاني');return;}
   if(!open&&occupied){toast('⚠️ هذا الوقت محجوز — اختار وقت ثاني');return;}
   const b={id:'ss'+Date.now(),name,phone,service:svc,serviceId:svcId,price:Number(price),dateKey,dateLabel,slot,day:dateLabel,createdAt:Date.now(),bookedAt:new Date().toLocaleTimeString('ar-IQ'),reminded:false,cancelled:false,manual:true,note:''};
-  data.bookings.push(b);try{await save();hideManual();render();toast(`✅ حُجز ${name}`);notify('🔔 حجز يدوي — الكوافير حسين صباح',`👤 ${name}\n✂️ ${svc}\n🕐 ${slot}\n📅 ${dateLabel}\n📞 ${phone}`);}catch{data.bookings.pop();toast('❌ فشل');}
+  data.bookings.push(b);try{await save();hideManual();render();toast(`✅ حُجز ${name}`);notify('🔔 حجز يدوي — الكوافير سيف العلي',`👤 ${name}\n✂️ ${svc}\n🕐 ${slot}\n📅 ${dateLabel}\n📞 ${phone}`);}catch{data.bookings.pop();toast('❌ فشل');}
 }
 
 function printToday(){
@@ -1160,14 +1160,14 @@ function printToday(){
   const sorted=[...tb].sort((a,b)=>ALL_SLOTS.indexOf(a.slot)-ALL_SLOTS.indexOf(b.slot));
   const total=sorted.reduce((s,b)=>s+(Number(b.price)||0),0);
   const win=window.open('','_blank');
-  win.document.write(`<html dir="rtl"><head><meta charset="UTF-8"/><title>الكوافير حسين صباح</title><style>body{font-family:Arial;direction:rtl;padding:20px;}h2{margin-bottom:14px;}table{width:100%;border-collapse:collapse;}th,td{border:1px solid #ddd;padding:7px;text-align:right;font-size:12px;}th{background:#070705;color:#C9A84C;}.tot{font-weight:bold;margin-top:10px;}</style></head><body><h2>☀️ الكوافير حسين صباح — حجوزات اليوم</h2><table><tr><th>#</th><th>الاسم</th><th>الخدمة</th><th>الساعة</th><th>السعر</th><th>الهاتف</th><th>ملاحظة</th></tr>${sorted.map((b,i)=>`<tr><td>${i+1}</td><td>${b.name}</td><td>${b.service}</td><td>${b.slot}</td><td>${Number(b.price).toLocaleString()}</td><td>${b.phone}</td><td>${b.note||''}</td></tr>`).join('')}</table><div class="tot">المجموع: ${total.toLocaleString()} د.ع | ${sorted.length} حجز</div></body></html>`);
+  win.document.write(`<html dir="rtl"><head><meta charset="UTF-8"/><title>الكوافير سيف العلي</title><style>body{font-family:Arial;direction:rtl;padding:20px;}h2{margin-bottom:14px;}table{width:100%;border-collapse:collapse;}th,td{border:1px solid #ddd;padding:7px;text-align:right;font-size:12px;}th{background:#070705;color:#C9A84C;}.tot{font-weight:bold;margin-top:10px;}</style></head><body><h2>☀️ الكوافير سيف العلي — حجوزات اليوم</h2><table><tr><th>#</th><th>الاسم</th><th>الخدمة</th><th>الساعة</th><th>السعر</th><th>الهاتف</th><th>ملاحظة</th></tr>${sorted.map((b,i)=>`<tr><td>${i+1}</td><td>${b.name}</td><td>${b.service}</td><td>${b.slot}</td><td>${Number(b.price).toLocaleString()}</td><td>${b.phone}</td><td>${b.note||''}</td></tr>`).join('')}</table><div class="tot">المجموع: ${total.toLocaleString()} د.ع | ${sorted.length} حجز</div></body></html>`);
   win.document.close();setTimeout(()=>win.print(),300);
 }
 function exportBkp(){const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=`sunshave_${todayK()}.json`;a.click();URL.revokeObjectURL(url);toast('✅ تم التحميل');}
 function sendBulk(){
   const dateKey=selDateKey==='all'?todayK():selDateKey;const db2=data.bookings.filter(b=>!b.cancelled&&b.dateKey===dateKey);
   if(!db2.length){toast('ما في زبائن');return;}
-  const msg=`السلام عليكم\nتذكير بموعدكم في الكوافير حسين صباح ☀️\nالتأخر أكثر من 15 دقيقة يلغي الحجز.`;
+  const msg=`السلام عليكم\nتذكير بموعدكم في الكوافير سيف العلي ☀️\nالتأخر أكثر من 15 دقيقة يلغي الحجز.`;
   db2.forEach((b,i)=>{setTimeout(()=>{const c=b.phone.replace(/\D/g,'');window.open(`https://wa.me/${c.startsWith('0')?'964'+c.slice(1):c}?text=${encodeURIComponent(msg)}`,'_blank');},i*800);});
   toast(`📲 فتح ${db2.length} محادثة...`);
 }
@@ -1178,7 +1178,7 @@ function checkNew(){const c=data.bookings.filter(b=>!b.cancelled).length;if(last
   toast(`🔔 حجز جديد! (${diff})`);
   // إشعار ntfy
   const newest=data.bookings.filter(b=>!b.cancelled).slice(-diff);
-  newest.forEach(b=>{sendNtfy('🔔 حجز جديد — الكوافير حسين صباح',`👤 ${b.name}\n✂️ ${b.service}\n🕐 ${b.slot}\n📅 ${b.day||b.dateKey}\n📞 ${b.phone}`);});
+  newest.forEach(b=>{sendNtfy('🔔 حجز جديد — الكوافير سيف العلي',`👤 ${b.name}\n✂️ ${b.service}\n🕐 ${b.slot}\n📅 ${b.day||b.dateKey}\n📞 ${b.phone}`);});
 }lastCount=c;}
 
 function render(){
@@ -1206,7 +1206,7 @@ window.markDone=markDone;window.saveNote=saveNote;window.sendWait=sendWait;
 window.clearAll=clearAll;window.renderArchive=renderArchive;window.renderAcc=renderAcc;
 window.addExp=addExp;window.delExp=delExp;window.notifyWait=notifyWait;
 // ─── ntfy + telegram ───
-const NTFY_TOPIC='hussein-sabah-nyvlopirap';
+const NTFY_TOPIC='saif-alali-vfdho69ppqc';
 const TG_TOKEN='8205449854:AAEy8543td3uSxq7L96y09B73UKn0wwdBZE';
 const TG_CHAT='7706249764';
 async function sendNtfy(title,body){try{fetch(`https://ntfy.sh/${NTFY_TOPIC}?title=${encodeURIComponent(title)}&priority=high&tags=scissors`,{method:'POST',mode:'no-cors',body:body});}catch{}}

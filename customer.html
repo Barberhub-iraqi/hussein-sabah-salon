@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>الكوافير حسين صباح — احجز موعدك</title>
+<title>الكوافير سيف العلي — احجز موعدك</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link rel="preconnect" href="https://www.gstatic.com"/>
@@ -43,7 +43,7 @@ body{font-family:'Cairo',sans-serif;direction:rtl;background:var(--black);min-he
   content:'';position:absolute;inset:0;
   background:
     linear-gradient(to bottom, rgba(10,10,8,0.45) 0%, rgba(10,10,8,0.75) 100%),
-    var(--hero-img, linear-gradient(135deg,#1a1208,#0a0a08)) center/cover no-repeat; /* TODO: حط رابط صورة الكوافير حسين صباح هنا مكان linear-gradient(...) */
+    var(--hero-img, linear-gradient(135deg,#1a1208,#0a0a08)) center/cover no-repeat; /* TODO: حط رابط صورة الكوافير سيف العلي هنا مكان linear-gradient(...) */
 }
 /* SVG logo inline */
 .logo-wrap{position:relative;z-index:1;width:120px;height:120px;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;}
@@ -240,7 +240,7 @@ body{font-family:'Cairo',sans-serif;direction:rtl;background:var(--black);min-he
 
 <div class="loader" id="loader">
   <div class="loader-ring"></div>
-  <p>الكوافير حسين صباح</p>
+  <p>الكوافير سيف العلي</p>
 </div>
 
 <div id="app" style="display:none">
@@ -250,18 +250,14 @@ body{font-family:'Cairo',sans-serif;direction:rtl;background:var(--black);min-he
   <div class="logo-wrap" style="background:none;box-shadow:none;">
     <div style="width:110px;height:110px;border:1px solid #c9a84c44;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;background:radial-gradient(circle,#1a1208,#0a0a0a);">
       <svg width="90" height="90" viewBox="0 0 160 160" fill="none">
-        <circle cx="80" cy="80" r="72" stroke="#c9a84c" stroke-width="1.2" fill="none"/>
-        <circle cx="80" cy="80" r="63" stroke="#c9a84c" stroke-width="0.5" opacity="0.3" fill="none"/>
-        <line x1="48" y1="50" x2="112" y2="106" stroke="#c9a84c" stroke-width="4" stroke-linecap="round"/>
-        <line x1="112" y1="50" x2="48" y2="106" stroke="#e8c96a" stroke-width="4" stroke-linecap="round"/>
-        <circle cx="48" cy="106" r="12" stroke="#c9a84c" stroke-width="2.5" fill="none"/>
-        <circle cx="112" cy="106" r="12" stroke="#e8c96a" stroke-width="2.5" fill="none"/>
-        <circle cx="80" cy="77" r="7" fill="#0d0d0d" stroke="#c9a84c" stroke-width="2.5"/>
-        <circle cx="80" cy="77" r="2.8" fill="#c9a84c"/>
+        <defs><linearGradient id="heroLogoG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#F5E199"/><stop offset="100%" stop-color="#C9A84C"/></linearGradient></defs>
+        <circle cx="80" cy="80" r="72" stroke="url(#heroLogoG)" stroke-width="1.2" fill="none"/>
+        <circle cx="80" cy="80" r="63" stroke="url(#heroLogoG)" stroke-width="0.5" opacity="0.3" fill="none"/>
+        <text x="80" y="102" text-anchor="middle" font-family="Cairo" font-size="52" font-weight="900" fill="url(#heroLogoG)">س.ع</text>
       </svg>
     </div>
   </div>
-  <div class="brand-name">الكوافير حسين صباح</div>
+  <div class="brand-name">الكوافير سيف العلي</div>
   <div class="brand-sub">BARBER SHOP</div>
   <div class="hero-line"></div>
   <div class="work-badge" id="workBadge">احجز موعدك الآن</div>
@@ -346,11 +342,11 @@ body{font-family:'Cairo',sans-serif;direction:rtl;background:var(--black);min-he
           </g>
           <circle cx="100" cy="100" r="46" fill="url(#g1)"/>
           <circle cx="100" cy="100" r="40" fill="#0A0A08"/>
-          <text x="100" y="116" text-anchor="middle" font-family="Cairo" font-size="44" font-weight="900" fill="url(#g1)">ح</text>
+          <text x="100" y="116" text-anchor="middle" font-family="Cairo" font-size="44" font-weight="900" fill="url(#g1)">س</text>
         </svg>
       </div>
       <div class="success-title">تم الحجز ✓</div>
-      <div class="success-sub">شكراً لاختيارك الكوافير حسين صباح</div>
+      <div class="success-sub">شكراً لاختيارك الكوافير سيف العلي</div>
       <div class="detail-box">
         <div class="d-row"><span>الاسم</span><strong id="s-name"></strong></div>
         <div class="d-row"><span>الخدمة</span><strong id="s-svc"></strong></div>
@@ -384,14 +380,14 @@ body{font-family:'Cairo',sans-serif;direction:rtl;background:var(--black);min-he
 
 <!-- SOCIAL BAR -->
 <!-- WhatsApp — يسار -->
-<a href="https://wa.me/9647XXXXXXXXX" data-todo="حط رقم واتساب الكوافير حسين صباح هنا" target="_blank" aria-label="واتساب" class="social-fab" style="position:fixed;bottom:24px;left:20px;z-index:900;">
+<a href="https://wa.me/9647814445553" target="_blank" aria-label="واتساب" class="social-fab" style="position:fixed;bottom:24px;left:20px;z-index:900;">
     <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <defs><linearGradient id="wg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#F5E199"/><stop offset="100%" stop-color="#C9A84C"/></linearGradient></defs>
       <path fill="url(#wg)" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
     </svg>
 </a>
 <!-- Instagram — يمين -->
-<a href="https://instagram.com/8b.4o" target="_blank" aria-label="انستقرام" class="social-fab" style="position:fixed;bottom:24px;right:20px;z-index:900;">
+<a href="https://instagram.com/sif9bs" target="_blank" aria-label="انستقرام" class="social-fab" style="position:fixed;bottom:24px;right:20px;z-index:900;">
     <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <defs><linearGradient id="ig" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#F5E199"/><stop offset="100%" stop-color="#C9A84C"/></linearGradient></defs>
       <path fill="url(#ig)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
@@ -442,7 +438,7 @@ body{font-family:'Cairo',sans-serif;direction:rtl;background:var(--black);min-he
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import { getFirestore, doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-// ── قاعدة بيانات الكوافير حسين صباح ──
+// ── قاعدة بيانات الكوافير سيف العلي ──
 const _app = initializeApp({
   apiKey:"AIzaSyBodSJzDp-6TUzKDYz93_u9b9klNYPSu_M",
   authDomain:"hussein-sabah-salon.firebaseapp.com",
@@ -452,14 +448,14 @@ const _app = initializeApp({
   appId:"1:517962558315:web:20920a4bc090ce2bf87a2e"
 });
 const _db = getFirestore(_app);
-const DB = doc(_db, "hussein-sabah", "data");
-const storeRef = doc(_db, "hussein-sabah", "store");
+const DB = doc(_db, "saif-alali", "data");
+const storeRef = doc(_db, "saif-alali", "store");
 
 const ALL_SLOTS = ["12:00 م","12:30 م","1:00 م","1:30 م","2:00 م","2:30 م","3:00 م","3:30 م","4:00 م","4:30 م","5:00 م","5:30 م","6:00 م","6:30 م","7:00 م","7:30 م","8:00 م","8:30 م","9:00 م","9:30 م","10:00 م","10:30 م","11:00 م","11:30 م","12:00 ص","12:30 ص","1:00 ص","1:30 ص","2:00 ص","2:30 ص","3:00 ص","3:30 ص","4:00 ص","4:30 ص","5:00 ص","5:30 ص","6:00 ص","6:30 ص","7:00 ص","7:30 ص","8:00 ص","8:30 ص","9:00 ص","9:30 ص","10:00 ص","10:30 ص","11:00 ص","11:30 ص"];
 const SLOT_H = {"12:00 م":12,"12:30 م":12.5,"1:00 م":13,"1:30 م":13.5,"2:00 م":14,"2:30 م":14.5,"3:00 م":15,"3:30 م":15.5,"4:00 م":16,"4:30 م":16.5,"5:00 م":17,"5:30 م":17.5,"6:00 م":18,"6:30 م":18.5,"7:00 م":19,"7:30 م":19.5,"8:00 م":20,"8:30 م":20.5,"9:00 م":21,"9:30 م":21.5,"10:00 م":22,"10:30 م":22.5,"11:00 م":23,"11:30 م":23.5,"12:00 ص":0,"12:30 ص":0.5,"1:00 ص":1,"1:30 ص":1.5,"2:00 ص":2,"2:30 ص":2.5,"3:00 ص":3,"3:30 ص":3.5,"4:00 ص":4,"4:30 ص":4.5,"5:00 ص":5,"5:30 ص":5.5,"6:00 ص":6,"6:30 ص":6.5,"7:00 ص":7,"7:30 ص":7.5,"8:00 ص":8,"8:30 ص":8.5,"9:00 ص":9,"9:30 ص":9.5,"10:00 ص":10,"10:30 ص":10.5,"11:00 ص":11,"11:30 ص":11.5};
 const DAYS = ["الأحد","الاثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت"];
 const MONTHS = ["يناير","فبراير","مارس","أبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر"];
-const NTFY_TOPIC='hussein-sabah-nyvlopirap';
+const NTFY_TOPIC='saif-alali-vfdho69ppqc';
 const DEFAULT_SVCS = [
   {id:'svc1', name:'حلاقة كاملة', price:20000, minPrice:15000, maxPrice:25000, icon:'✂️'},
   {id:'svc2',name:'تحديد ولحية', price:10000, icon:'🪒'},
@@ -709,7 +705,7 @@ async function doBook(){
     // إرسال إشعار ntfy
     try{
       const msg=encodeURIComponent(`👤 ${name}\n✂️ ${svc.name}\n💰 ${fmtPrice(finalPrice)}\n🕐 ${selSlot}\n📅 ${selDateLabel}\n📞 ${phone}`);
-      const title=encodeURIComponent('حجز جديد - الكوافير حسين صباح');
+      const title=encodeURIComponent('حجز جديد - الكوافير سيف العلي');
       fetch(`https://ntfy.sh/${NTFY_TOPIC}?title=${title}&priority=high&tags=scissors`,{
         method:'POST',
         mode:'no-cors',
@@ -767,7 +763,7 @@ async function loadProducts(){
   }catch{productsList=[];}
   renderShop();
 }
-const SHOP_WA='9647XXXXXXXXX'; // TODO: حط رقم واتساب الكوافير حسين صباح هنا
+const SHOP_WA='9647814445553';
 function renderShop(){
   const section=document.getElementById('shopSection');
   const grid=document.getElementById('shopGrid');
